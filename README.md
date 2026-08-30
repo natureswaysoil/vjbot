@@ -30,6 +30,14 @@ X-Trend version defaults:
 - Minimum aligned timeframes: 3 of 4
 - Minimum intraday trend score: 3.0
 
+## NinjaTrader results workflow
+
+- `Results/` stores Strategy Analyzer exports and trade logs.
+- `Tools/Sync-NinjaTraderResults.ps1` watches a NinjaTrader export folder, copies changed CSV/XLSX/TXT/XML results into `Results`, commits them, and pushes them to GitHub.
+- `Tools/SETUP.md` contains the Windows/NinjaTrader PC setup steps.
+
+This makes it possible to compare every strategy revision against the same backtest data and focus on loss reduction rather than relying on screenshots alone.
+
 ## Evaluation priority
 
 Rank changes primarily by:
